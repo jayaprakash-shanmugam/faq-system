@@ -23,10 +23,10 @@ from faq_system.core import ProductionFAQSystem
 faq = ProductionFAQSystem()
 
 # Add FAQs
-faq.add_faq("What is Enterprise AI?", "Enterprise AI is ...")
+faq.load_knowledge_base()
 
 # Search
-results = faq.search("Tell me about AI")
+results = faq.answer_question("Tell me about AI")
 print(results)
 ```
 
